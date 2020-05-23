@@ -41,6 +41,7 @@ Page {
 }
 ```
 
-Combine with `ListModel`, `Repeater`, and `Animation` elements for really cool stuff.
+Combine with Shellfish's `ListModel`, `Repeater`, and `Animation` elements for
+really cool stuff.
 
 Compile reusable groups of objects in their own `.shui` files.
