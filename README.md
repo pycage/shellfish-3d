@@ -16,23 +16,21 @@ Page {
         originalHeight: bbox.height
 
         camera: s3d.Camera {
-            z: -5
+            location: vec3(0, 0, 5)
         }
 
         scene: s3d.Group {
 
             s3d.Light {
-                x: 5
-                y: 10
-                z: -1
+                location: vec3(5, 10, -1)
                 color: [1.0, 0.8, 0.8]
             }
 
             s3d.CubeMesh {
-                x: 1
-                z: 1
-                yScale: 3
-                zRotation: 45
+                location: vec3(1, 0, 1)
+                scale: vec3(1, 3, 1)
+                rotationAxis: vec3(0, 1, 0)
+                rotationAngle: 45
 
                 material: s3d.TextureMaterial { source: "stonewall.png" }
             }
