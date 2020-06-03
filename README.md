@@ -15,18 +15,21 @@ Page {
         originalWidth: bbox.width
         originalHeight: bbox.height
 
-        camera: s3d.Camera {
-            location: vec3(0, 0, 5)
-        }
+        camera: cam
 
         scene: s3d.Group {
 
-            s3d.Light {
-                location: vec3(5, 10, -1)
-                color: [1.0, 0.8, 0.8]
+            s3d.Camera {
+                id: cam
+                location: vec3(0, 0, 5)
             }
 
-            s3d.CubeMesh {
+            s3d.Light {
+                location: vec3(5, 10, -1)
+                color: rgb(1.0, 0.8, 0.8)
+            }
+
+            s3d.Cube {
                 location: vec3(1, 0, 1)
                 scale: vec3(1, 3, 1)
                 rotationAxis: vec3(0, 1, 0)
